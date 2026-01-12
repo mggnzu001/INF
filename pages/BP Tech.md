@@ -1,476 +1,570 @@
+- What were the characteristics of early information systems?
+	- They were built from scratch, requiring all functionality—including data storage and retrieval—to be manually programmed.
+- Why were Database Management Systems (DBMS) introduced? #card
+	- Many information systems shared similar data management needs, so this generic functionality was outsourced to DBMSs.
+- What type of functionality was later subcontracted to UI tools? #card
+	- User interaction functionality such as forms, buttons, graphs, and other interface components.
+- What general trend in information system development does this evolution illustrate? #card
+	- Recurring functionality is increasingly subcontracted to generic tools instead of being custom-built.
+- Where do BPM systems (BPMS) fit into this trend? #card
+	- BPMS subcontract process-related aspects of information systems.
+- How are BPM systems related to Workflow Management (WFM)? #card
+	- BPM systems are an extension of WFM, offering broader and more advanced functionality.
+- Name examples of advanced capabilities provided by BPM systems beyond WFM. #card
+	- Simulation, business process intelligence, and case management.
+- How does the BPM market differ from the database market? #card
+	- The BPM market is more diverse and lacks consensus on standard notations and core capabilities.
+- Why is there less standardization in BPM compared to data management? #card
+	- Process management is inherently more complex and challenging than data management.
+- Where is WFM/BPM technology often found in practice? #card
+	- Embedded inside other systems rather than as standalone BPM tools.
+- Give examples of ERP systems that include workflow engines. #card
+	- SAP and Oracle.
+- What other types of platforms provide workflow-like functionality? #card
+	- Integration and application infrastructure platforms such as IBM WebSphere and Cordys Business Operations Platform (BOP).
+- What is the core idea of Service-Oriented Computing (SOC)? #card
+	- Subcontracting work to specialized services in a loosely coupled manner.
+- How does SOC influence process enactment infrastructures? #card
+	- It fundamentally reshapes their architecture by enabling processes to be built from interacting services.
+- How is functionality provided by business applications represented in SOC? #card
+	- As web services encapsulating functionality at a semantic level.
+- How can web services be invoked in SOC? #card
+	- By application programs or by other services.
+- Which Internet standards are commonly used to support web services? #card
+	- HTTP, XML, SOAP, WSDL, and UDDI.
+- What are composite web services? #card
+	- Web services formed by interconnecting services from multiple organizations to support business collaboration.
+- What is a Service-Oriented Architecture (SOA)? #card
+	- An architectural style where interacting services exchange messages to deliver functionality.
+- How are more complex services created in SOA? #card
+	- By combining multiple basic services.
+- What is service orchestration? #card
+	- The composition of services from the viewpoint of a single coordinating service (“spider in the web”).
+- What is service choreography? #card
+	- The composition of services from a global viewpoint focusing on shared and complementary observable behavior.
+- In what situations is choreography particularly relevant? #card
+	- When there is no single central coordinator among services.
+- How do orchestration and choreography relate to each other? #card
+	- They describe overlapping but distinct aspects of integrating services into end-to-end business processes.
+- Why has the distinction between orchestration and choreography been debated? #card
+	- Their conceptual overlap has led to extensive discussion over the past decade.
+- How can SOC and SOA be used in BPM/WFM contexts? #card
+	- To realize process enactment infrastructures.
+- How do processes and services interact in SOC/SOA-based systems? #card
+	- Processes may implement services and may also consume existing services.
+- What service-related capabilities do modern BPM/WFM systems provide? #card
+	- They can expose processes as services and implement process activities by invoking other services.
+- What major change in business–IT relations occurred in the last decade (Harmon, 2015)? #card
+	- IT came to be seen as an integral part of company strategy rather than merely a support service.
+- How did the role of IT managers change in response to this shift? #card
+	- They shifted focus from technology support to enabling and implementing business processes.
+- What became the “common language” between business executives and IT managers? #card
+	- The goals and workings of business processes.
+- How did this reorientation affect IT support for business managers? #card
+	- It led to a reconsideration of IT’s role and to the development of integrated BPMS software suites.
+- What types of tools were historically separate but are now integrated into BPMS products? #card
+	- Workflow, business intelligence, rules engines, and enterprise application integration (EAI) tools.
+- How did the term BPMS change the way these tools were described? #card
+	- Previously separate tools began to be grouped and marketed collectively as BPMS products.
+- What was the significance of Smith and Fingar’s Business Process Management (2003)? #card
+	- It called on companies to adopt BPMS to automate and manage business processes.
+- What vision did Smith and Fingar have for BPMS? #card
+	- Managers could monitor process performance in real time and modify processes to adapt to changing conditions.
+- How did Smith and Fingar conceptualize BPMS software? #card
+	- As a software layer sitting above other systems to manage people and software involved in major processes.
+- Did the BPMS market emerge entirely from new vendors? #card
+	- No, most BPMS vendors evolved from existing workflow, BI, EAI, rules engine, or ERP vendors.
+- How did vendors adapt their existing products to align with BPMS? #card
+	- By adding capabilities such as EAI, workflow, rules engines, and BI to their platforms.
+- What is a key difference between today’s BPMS and workflow/EAI systems from around 2000? #card
+	- Modern systems are designed to leverage the Internet and Service-Oriented Architecture (SOA).
+- Can SOA projects exist without BPM? #card
+	- Yes, simple SOA projects can be done without BPM.
+- Why do sophisticated SOA projects require BPM? #card
+	- They must be integrated with a deep understanding of organizational business processes to deliver value.
+- Why have major platform vendors increased their support for BPM and BPMS? #card
+	- Due to the central role SOA infrastructure plays in their platforms.
+- Why is the relationship between BPMS and SOA described as a “mixed blessing”? #card
+	- It increased vendor commitment but shifted focus toward technical integration over business process understanding.
+- How can BPM become marginalized in SOA-driven discussions? #card
+	- It may be treated as secondary to infrastructure and enterprise integration concerns.
+- What common mistake do SOA developers make regarding business involvement? #card
+	- They treat business input as mere “requirements” rather than engaging deeply with business processes.
+- What is the core critique raised by Inaganti (2007)? #card
+	- BPM often gets sidelined when SOA discussions focus too heavily on technical infrastructure.
 - What are Business Process Modeling (BP Modeling) tools designed to do? #card
-  - Define, document, store, update, and maintain information about business processes.
+	- Define, document, store, update, and maintain information about business processes.
 - Why do organizations adopt BP Modeling tools at an enterprise level? #card
-  - To support enterprise-wide process architectures rather than isolated process changes.
+	- To support enterprise-wide process architectures rather than isolated process changes.
 - What is the main trade-off of using BP Modeling tools? #card
-  - They are harder to learn, but their long-term benefits outweigh the learning effort.
+	- They are harder to learn, but their long-term benefits outweigh the learning effort.
 - What are Organization Modeling tools? #card
-  - Tools that create high-level models showing how an organization interacts with its environment.
+	- Tools that create high-level models showing how an organization interacts with its environment.
 - What do Organization Models typically represent? #card
-  - Value chains, major business processes, and alignment between processes and enterprise resources.
+	- Value chains, major business processes, and alignment between processes and enterprise resources.
 - How are Organization Modeling tools related to BP Modeling tools? #card
-  - Many BP Modeling tools include Organization Modeling features, and some tools specialize in it.
+	- Many BP Modeling tools include Organization Modeling features, and some tools specialize in it.
 - What are Business Process Simulation tools used for? #card
-  - Simulating process behavior to analyze performance and outcomes under different conditions.
+	- Simulating process behavior to analyze performance and outcomes under different conditions.
 - Why do BP Modeling teams often rely on specialists for simulation? #card
-  - Advanced simulations are complex and require sophisticated simulation tools.
+	- Advanced simulations are complex and require sophisticated simulation tools.
 - What are Business Process Management Suites or Systems (BPMS tools)? #card
-  - Tools that combine process modeling with runtime process execution.
+	- Tools that combine process modeling with runtime process execution.
 - Which older tool capabilities are combined in BPMS tools? #card
-  - Workflow and Enterprise Application Integration (EAI) capabilities.
+	- Workflow and Enterprise Application Integration (EAI) capabilities.
 - What additional capabilities may BPMS tools include? #card
-  - Rule management and process monitoring.
+	- Rule management and process monitoring.
 - What long-term role do BPMS tools promise? #card
-  - Creating a process layer between process designers/managers and the underlying software systems.
+	- Creating a process layer between process designers/managers and the underlying software systems.
 - What is a BPM Application? #card
-  - An application that manages all people and software systems involved in executing a specific business process.
+	- An application that manages all people and software systems involved in executing a specific business process.
 - How does a BPM Application relate to a BPMS? #card
-  - A BPMS is a tool used to build BPM Applications.
+	- A BPMS is a tool used to build BPM Applications.
 - What distinguishes a BPM Application from a traditional application? #card
-  - It allows managers to modify the process logic through built-in BPMS capabilities.
+	- It allows managers to modify the process logic through built-in BPMS capabilities.
 - How are BPM Applications expected to evolve in the market? #card
-  - BPMS functionality will increasingly be embedded directly into BPM Applications.
+	- BPMS functionality will increasingly be embedded directly into BPM Applications.
 - How are ERP and CRM vendors expected to respond to BPM adoption? #card
-  - By offering BPM Applications designed to integrate with their existing ERP or CRM modules.
+	- By offering BPM Applications designed to integrate with their existing ERP or CRM modules.
 - What are Business Process Monitoring tools? #card
-  - Tools that track and report information about process execution and events.
+	- Tools that track and report information about process execution and events.
 - What information do basic BPMS monitoring tools provide? #card
-  - Process event data for process supervisors.
+	- Process event data for process supervisors.
 - What are Business Activity Monitoring (BAM) tools? #card
-  - Advanced monitoring tools that combine process data with data warehouses and BI techniques.
+	- Advanced monitoring tools that combine process data with data warehouses and BI techniques.
 - What techniques do BAM tools use to analyze data? #card
-  - Simulation, Business Intelligence (BI), and data mining techniques.
+	- Simulation, Business Intelligence (BI), and data mining techniques.
 - How do BAM tools present information to executives? #card
-  - Through near real-time executive dashboards.
+	- Through near real-time executive dashboards.
 - What are Rule Management tools? #card
-  - Tools used to identify, store, analyze, and apply business rules within processes.
+	- Tools used to identify, store, analyze, and apply business rules within processes.
 - How do BP Modeling tools support rule management? #card
-  - By allowing analysts to identify and save business rules.
+	- By allowing analysts to identify and save business rules.
 - What advanced capabilities can Rule Management tools provide at runtime? #card
-  - Logical inferencing to analyze rules and generate or suggest decisions.
+	- Logical inferencing to analyze rules and generate or suggest decisions.
 - What were early BPM tools primarily focused on? #card
-  - Process modeling, with limited monitoring and management capabilities.
+	- Process modeling, with limited monitoring and management capabilities.
 - How have BPM tools evolved over time? #card
-  - They have become more complex by adding business rules, database management, and real-time process change capabilities.
+	- They have become more complex by adding business rules, database management, and real-time process change capabilities.
 - What usability issue arose as BPM tools gained more features? #card
-  - Poor integration of features made many tools difficult to understand and use.
+	- Poor integration of features made many tools difficult to understand and use.
 - What has happened to the BPM tools market over time? #card
-  - Significant market consolidation through mergers and acquisitions.
+	- Significant market consolidation through mergers and acquisitions.
 - What is meant by a “dual market” in BPM tools today? #card
-  - One group of vendors offers powerful, feature-rich tools, while another offers simpler tools aimed at beginners.
+	- One group of vendors offers powerful, feature-rich tools, while another offers simpler tools aimed at beginners.
 - Who are the primary users of the simpler BPM tools? #card
-  - Beginners and organizations seeking ease of use over advanced capabilities.
+	- Beginners and organizations seeking ease of use over advanced capabilities.
 - What external pressures affect BPM tool vendors today? #card
-  - Rapid changes in the IT market requiring continuous tool upgrades.
+	- Rapid changes in the IT market requiring continuous tool upgrades.
 - Which new technologies are driving BPM tool evolution? #card
-  - Cloud computing, Robotic Process Automation (RPA), and Artificial Intelligence (AI).
+	- Cloud computing, Robotic Process Automation (RPA), and Artificial Intelligence (AI).
 - How does vendor turnover characterize the BPM tools market? #card
-  - New vendors frequently appear while older vendors are acquired or replaced.
+	- New vendors frequently appear while older vendors are acquired or replaced.
 - What does the continued release of new tool generations indicate about BPM tools? #card
-  - The market is dynamic and constantly adapting to technological change.
+	- The market is dynamic and constantly adapting to technological change.
 - Evolution of design technologies #card
-  - [![image.png](https://i.postimg.cc/tCJmnKpJ/image.png)](https://postimg.cc/GH0jZSBn)
+	- [![image.png](https://i.postimg.cc/tCJmnKpJ/image.png)](https://postimg.cc/GH0jZSBn)
 - Key capabilites of BPMS #card
-  - [image.png](https://postimg.cc/kBFWLM3W)
+	- [image.png](https://postimg.cc/kBFWLM3W)
 - What is a Business Rules Management System (BRMS)? #card
-  - Software that enables an enterprise to define, analyze, audit, maintain, and execute business rules.
+	- Software that enables an enterprise to define, analyze, audit, maintain, and execute business rules.
 - How does a traditional BRMS relate to a DMS? #card
-  - A traditional BRMS is the predecessor of the Decision Management Suite (DMS).
+	- A traditional BRMS is the predecessor of the Decision Management Suite (DMS).
 - What types of software components does a BRMS include? #card
-  - Design-time and runtime software components.
+	- Design-time and runtime software components.
 - What is the role of a Business Rule Engine (BRE) in a BRMS? #card
-  - To execute managed business rules or generate executable code.
+	- To execute managed business rules or generate executable code.
 - Which AI techniques may be used by a BRMS rule engine? #card
-  - Goal-driven and data-driven reasoning.
+	- Goal-driven and data-driven reasoning.
 - Why are BRMSs evolving into Decision Management Suites (DMSs)? #card
-  - To support analytics-driven operational decision making and decision-centered design methodologies.
+	- To support analytics-driven operational decision making and decision-centered design methodologies.
 - What is a Decision Management Suite (DMS)? #card
-  - Software that enables enterprises to define, analyze, audit, and maintain decision-making services, including rules and analytics.
+	- Software that enables enterprises to define, analyze, audit, and maintain decision-making services, including rules and analytics.
 - What additional capabilities do DMSs offer compared to BRMSs? #card
-  - Stronger support for decision modeling and analytics.
+	- Stronger support for decision modeling and analytics.
 - What role does predictive analytics play in the evolution from BRMS to DMS? #card
-  - Increased use of machine learning (ML) has driven the need for richer decision management.
+	- Increased use of machine learning (ML) has driven the need for richer decision management.
 - What is the most common alternative to using a DMS? #card
-  - Implementing decision logic using conventional application development or BPM tools.
+	- Implementing decision logic using conventional application development or BPM tools.
 - How are simple decisions typically implemented without a DMS? #card
-  - Using standard procedural programming languages such as Java.
+	- Using standard procedural programming languages such as Java.
 - How do some organizations manage larger rule sets without a DMS? #card
-  - By building custom rule engines using soft-coded constructs like database tables.
+	- By building custom rule engines using soft-coded constructs like database tables.
 - What advantage do soft-coded rule engines provide? #card
-  - They allow dynamic modification of decision parameters without recompiling the application.
+	- They allow dynamic modification of decision parameters without recompiling the application.
 - What are the limitations of custom or “homegrown” rule engines? #card
-  - Lack business-friendly authoring, governance, monitoring, documentation, and scalability for complex decisions.
+	- Lack business-friendly authoring, governance, monitoring, documentation, and scalability for complex decisions.
 - Why are custom rule engines less suitable for complex, multi-step decisions? #card
-  - They struggle with multiple rulesets and analytical scoring steps.
+	- They struggle with multiple rulesets and analytical scoring steps.
 - What long-term risk is associated with maintaining custom rule engines? #card
-  - Maintenance becomes difficult if original developers are unavailable.
+	- Maintenance becomes difficult if original developers are unavailable.
 - In what scenario might a custom rule engine be less efficient than a DMS? #card
-  - When decision logic changes frequently.
+	- When decision logic changes frequently.
 - Why are complex decisions hard to manage in low-code tools alone? #card
-  - They are difficult to design and document without a DMS or decision modeling tool.
+	- They are difficult to design and document without a DMS or decision modeling tool.
 - When might a Decision Management Suite not be necessary? #card
-  - When using an intelligent Business Process Management Suite (iBPMS).
+	- When using an intelligent Business Process Management Suite (iBPMS).
 - Why can an iBPMS replace a DMS in some projects? #card
-  - Many iBPMS products include most or all DMS features.
+	- Many iBPMS products include most or all DMS features.
 - BPM Context Matrix #card
-  - ![image.png](https://postimg.cc/KRqnDZ67)
+	- ![image.png](https://postimg.cc/KRqnDZ67)
 - How does Gartner define the iBPMS market? #card
-  - Vendors offering licensed software that supports the full lifecycle of business process and decision discovery, analysis, design, implementation, execution, monitoring, and optimization.
+	- Vendors offering licensed software that supports the full lifecycle of business process and decision discovery, analysis, design, implementation, execution, monitoring, and optimization.
 - What lifecycle stages does an iBPMS support? #card
-  - Discovery, analysis, design, implementation, execution, monitoring, and optimization.
+	- Discovery, analysis, design, implementation, execution, monitoring, and optimization.
 - What capabilities are consolidated in an iBPMS offering? #card
-  - Process discovery, modeling, integration services, decision management, orchestration, choreography, and advanced analytics.
+	- Process discovery, modeling, integration services, decision management, orchestration, choreography, and advanced analytics.
 - Who is the primary audience for iBPMS platforms? #card
-  - IT leaders, enterprise architects, process architects, process analysts, and process owners.
+	- IT leaders, enterprise architects, process architects, process analysts, and process owners.
 - For what purposes are iBPMS platforms mainly used? #card
-  - Business process optimization and business transformation.
+	- Business process optimization and business transformation.
 - What foundational process capabilities do all iBPMS platforms provide? #card
-  - Process orchestration, choreography, and modeling.
+	- Process orchestration, choreography, and modeling.
 - What development approach is universally supported by iBPMS platforms? #card
-  - Model-driven development.
+	- Model-driven development.
 - What is the core promise of iBPMS platforms? #card
-  - Managing the full lifecycle of complex, long-running, and sometimes unstructured processes across organizational boundaries.
+	- Managing the full lifecycle of complex, long-running, and sometimes unstructured processes across organizational boundaries.
 - What types of business processes are best suited for iBPMS platforms? #card
-  - End-to-end processes that span departments and organizations.
+	- End-to-end processes that span departments and organizations.
 - What types of developers may work with iBPMS platforms? #card
-  - Citizen developers, business unit developers, professional developers, and specialist developers.
+	- Citizen developers, business unit developers, professional developers, and specialist developers.
 - What specialist developer roles are commonly associated with iBPMS platforms? #card
-  - Data and decision designers, integration specialists, event processing/streaming analytics experts, and predictive analytics/ML developers.
+	- Data and decision designers, integration specialists, event processing/streaming analytics experts, and predictive analytics/ML developers.
 - How do analytics enhance iBPMS platforms? #card
-  - By analyzing process data to provide insights that improve decision-making.
+	- By analyzing process data to provide insights that improve decision-making.
 - What types of analytics may be integrated into an iBPMS? #card
-  - Predictive analytics (e.g., scoring services) and prescriptive analytics (e.g., optimization engines).
+	- Predictive analytics (e.g., scoring services) and prescriptive analytics (e.g., optimization engines).
 - What is the role of business rules and decision management in iBPMS? #card
-  - To guide human or automated operational decisions based on business policies.
+	- To guide human or automated operational decisions based on business policies.
 - What is meant by “business-outcome-driven” decision management? #card
-  - Decision-making focused on consistency, standardization, and data-driven reasoning rather than intuition.
+	- Decision-making focused on consistency, standardization, and data-driven reasoning rather than intuition.
 - Why is consistency important in iBPMS decision management? #card
-  - To ensure decisions align with business objectives and policies across processes.
+	- To ensure decisions align with business objectives and policies across processes.
 - What trend is driving the increased focus on low-code automation in iBPMS? #card
-  - The need to rapidly build model-driven applications for process automation.
+	- The need to rapidly build model-driven applications for process automation.
 - What low-code features are iBPMS vendors adding? #card
-  - Graphical UIs, process models, prebuilt UI components, and prebuilt integration flows.
+	- Graphical UIs, process models, prebuilt UI components, and prebuilt integration flows.
 - What limitation exists in some vendors’ low-code offerings? #card
-  - The capability is sometimes more marketing-driven than functionally mature.
+	- The capability is sometimes more marketing-driven than functionally mature.
 - What new capabilities are iBPMS vendors increasingly adding? #card
-  - Process mining and Robotic Process Automation (RPA).
+	- Process mining and Robotic Process Automation (RPA).
 - How do iBPMS platforms support RPA ecosystems? #card
-  - By orchestrating bots from multiple RPA providers.
+	- By orchestrating bots from multiple RPA providers.
 - Why is process mining important to iBPMS platforms? #card
-  - It helps discover, analyze, and improve real-world process execution.
+	- It helps discover, analyze, and improve real-world process execution.
 - How does iBPMS support business transformation? #card
-  - By combining analytics, automation, decision management, and orchestration to redesign and optimize processes end-to-end.
+	- By combining analytics, automation, decision management, and orchestration to redesign and optimize processes end-to-end.
 - Process Mining Diagram #card
-  - ![image.png](https://postimg.cc/ZCdTVH2S)
+	- ![image.png](https://postimg.cc/ZCdTVH2S)
 - What is Context-Aware Business Process Management (BPM)? #card
-  - An approach that manages processes by considering their contextual characteristics, such as variability and frequency.
+	- An approach that manages processes by considering their contextual characteristics, such as variability and frequency.
 - What is the BPM Context Matrix? #card
-  - A 4-quadrant matrix that classifies processes based on variability and frequency to guide appropriate BPM practices.
+	- A 4-quadrant matrix that classifies processes based on variability and frequency to guide appropriate BPM practices.
 - What are the two dimensions of the BPM Context Matrix? #card
-  - Variability and frequency.
+	- Variability and frequency.
 - What does variability refer to in BPM? #card
-  - The degree to which a process can or should respond to internal and external dynamics.
+	- The degree to which a process can or should respond to internal and external dynamics.
 - What does frequency refer to in BPM? #card
-  - How often a process is executed.
+	- How often a process is executed.
 - Why are frequently executed processes often more similar? #card
-  - Repetition tends to standardize execution patterns.
+	- Repetition tends to standardize execution patterns.
 - What happens when variability and frequency are combined? #card
-  - They form four distinct process clusters in the BPM Context Matrix.
+	- They form four distinct process clusters in the BPM Context Matrix.
 - What are the four clusters in the BPM Context Matrix? #card
-  - Performance, Innovation, Reliability, and Agility.
+	- Performance, Innovation, Reliability, and Agility.
 - What defines the Performance Cluster? #card
-  - High frequency and low variability.
+	- High frequency and low variability.
 - Give an example of a Performance Cluster process. #card
-  - A production process such as manufacturing identical nails.
+	- A production process such as manufacturing identical nails.
 - What is the main management goal in the Performance Cluster? #card
-  - Standardization and efficiency.
+	- Standardization and efficiency.
 - What defines the Innovation Cluster? #card
-  - Low frequency and high variability.
+	- Low frequency and high variability.
 - Why do Innovation Cluster processes require flexibility? #card
-  - Outcomes are uncertain and cannot be fully prescribed in advance.
+	- Outcomes are uncertain and cannot be fully prescribed in advance.
 - Give an example of an Innovation Cluster process. #card
-  - Research and development (R&D).
+	- Research and development (R&D).
 - What defines the Reliability Cluster? #card
-  - Low frequency and low variability.
+	- Low frequency and low variability.
 - Give an example of a Reliability Cluster process. #card
-  - Preparing an annual tax return.
+	- Preparing an annual tax return.
 - What is the primary management focus in the Reliability Cluster? #card
-  - Consistency, compliance, and correct execution.
+	- Consistency, compliance, and correct execution.
 - What defines the Agility Cluster? #card
-  - High frequency and high variability.
+	- High frequency and high variability.
 - Why are Agility Cluster processes considered knowledge-intensive? #card
-  - They rely heavily on human expertise, judgment, and improvisation.
+	- They rely heavily on human expertise, judgment, and improvisation.
 - Give an example of an Agility Cluster process. #card
-  - Talent acquisition or recruitment.
+	- Talent acquisition or recruitment.
 - How can the BPM Context Matrix guide digital technology selection? #card
-  - By matching technologies to process characteristics like frequency and variability.
+	- By matching technologies to process characteristics like frequency and variability.
 - Why is process mining best suited for high-frequency processes? #card
-  - High frequency generates sufficient digital trace data for meaningful analysis.
+	- High frequency generates sufficient digital trace data for meaningful analysis.
 - Which BPM Context Matrix cluster is particularly suitable for process mining? #card
-  - The Agility Cluster.
+	- The Agility Cluster.
 - What is the goal of using process mining in the Agility Cluster? #card
-  - To analyze and challenge variability to assess whether it is value-adding.
+	- To analyze and challenge variability to assess whether it is value-adding.
 - What guiding questions help evaluate variability in agile processes? #card
-  - Is it necessary? Is it value-adding? Is it avoidable or preventable?
+	- Is it necessary? Is it value-adding? Is it avoidable or preventable?
 - Why is RPA especially suitable for the Performance Cluster? #card
-  - High frequency and low variability make standardization and automation effective.
+	- High frequency and low variability make standardization and automation effective.
 - Why is RPA less suitable for the Innovation Cluster? #card
-  - Automation and standardization can restrict creativity and problem-solving.
+	- Automation and standardization can restrict creativity and problem-solving.
 - What types of tools best support Innovation Cluster processes? #card
-  - Project management and messaging systems that support collaboration and knowledge sharing.
+	- Project management and messaging systems that support collaboration and knowledge sharing.
 - What is the key management objective for the Reliability Cluster? #card
-  - Reinforcing standardized execution when the process occurs.
+	- Reinforcing standardized execution when the process occurs.
 - What digital tools are appropriate for Reliability Cluster processes? #card
-  - Workflows and templates to guide correct execution.
+	- Workflows and templates to guide correct execution.
 - Process Mining Diagram #card
-  - ![image.png](https://postimg.cc/Cd4tYq8f)
+	- ![image.png](https://postimg.cc/Cd4tYq8f)
 - What is Process Mining? #card
-  - A process analysis method that discovers, monitors, and improves real processes using event logs from information systems.
+	- A process analysis method that discovers, monitors, and improves real processes using event logs from information systems.
 - What distinguishes Process Mining from traditional process analysis? #card
-  - It analyzes real, observed processes rather than assumed or purely documented ones.
+	- It analyzes real, observed processes rather than assumed or purely documented ones.
 - What data source does Process Mining rely on? #card
-  - Event logs recorded in an organization’s information systems.
+	- Event logs recorded in an organization’s information systems.
 - What is the main purpose of Process Mining? #card
-  - To diagnose problems and suggest improvements based on factual data.
+	- To diagnose problems and suggest improvements based on factual data.
 - How does Process Mining present process insights? #card
-  - Through graphical process models and contextual analysis.
+	- Through graphical process models and contextual analysis.
 - Why is Process Mining considered fact-based? #card
-  - It detects issues using recorded event data rather than intuition or assumptions.
+	- It detects issues using recorded event data rather than intuition or assumptions.
 - What is meant by confronting event data with process models? #card
-  - Comparing observed behavior with documented or discovered process models.
+	- Comparing observed behavior with documented or discovered process models.
 - What benefits result from pairing event data with process models? #card
-  - Compliance checking, deviation detection, delay prediction, decision support, and process redesign.
+	- Compliance checking, deviation detection, delay prediction, decision support, and process redesign.
 - What was Process Mining initially called by Gartner in 2008? #card
-  - Automated Business Process Discovery (ABPD).
+	- Automated Business Process Discovery (ABPD).
 - What was the role of the IEEE Task Force on Process Mining? #card
-  - To promote Process Mining as a tool for improving process design, control, and support.
+	- To promote Process Mining as a tool for improving process design, control, and support.
 - Who is considered one of the founders of Process Mining? #card
-  - Professor Wil van der Aalst.
+	- Professor Wil van der Aalst.
 - What is the significance of Process Mining: Data Science in Action? #card
-  - It is a foundational and updated reference book on Process Mining.
+	- It is a foundational and updated reference book on Process Mining.
 - What capability does automated process discovery provide? #card
-  - Automatic identification of process models, variants, cases, frequencies, and statistics.
+	- Automatic identification of process models, variants, cases, frequencies, and statistics.
 - How does Process Mining support customer interaction analysis? #card
-  - By discovering and analyzing customer behavior and aligning it with internal processes.
+	- By discovering and analyzing customer behavior and aligning it with internal processes.
 - What operational perspectives can Process Mining analyze? #card
-  - Multiple perspectives beyond control flow, such as performance and organizational views.
+	- Multiple perspectives beyond control flow, such as performance and organizational views.
 - How does Process Mining support real-time monitoring? #card
-  - Through dashboards displaying key performance indicators (KPIs).
+	- Through dashboards displaying key performance indicators (KPIs).
 - What compliance-related capabilities does Process Mining provide? #card
-  - Compliance verification and gap analysis.
+	- Compliance verification and gap analysis.
 - What advanced analytical capabilities does Process Mining enable? #card
-  - Predictive analysis, prescriptive analysis, scenario testing, and simulation.
+	- Predictive analysis, prescriptive analysis, scenario testing, and simulation.
 - How does Process Mining improve existing process models? #card
-  - By enhancing them using additional data from recorded executions.
+	- By enhancing them using additional data from recorded executions.
 - What data-related support is included in Process Mining tools? #card
-  - Data preparation and data cleansing.
+	- Data preparation and data cleansing.
 - What does combining multiple process models achieve? #card
-  - Visualization of interacting processes within a single analysis view.
+	- Visualization of interacting processes within a single analysis view.
 - How does Process Mining help contextualize processes? #card
-  - By showing how processes contribute to business value and operating models.
+	- By showing how processes contribute to business value and operating models.
 - How does Process Mining improve collaboration in organizations? #card
-  - By creating a shared, data-driven understanding between Business and IT.
+	- By creating a shared, data-driven understanding between Business and IT.
 - What organizational outcomes can Process Mining support? #card
-  - Standardization, operational excellence, and process optimization.
+	- Standardization, operational excellence, and process optimization.
 - What are the three main types of Process Mining? #card
-  - Discovery, Conformance, and Enhancement.
+	- Discovery, Conformance, and Enhancement.
 - What is Process Discovery? #card
-  - Creating a process model from event logs without prior process knowledge.
+	- Creating a process model from event logs without prior process knowledge.
 - What is Conformance Checking in Process Mining? #card
-  - Comparing real executions with predefined or ideal process models to identify deviations.
+	- Comparing real executions with predefined or ideal process models to identify deviations.
 - What is Process Enhancement? #card
-  - Improving or extending existing process models using real execution data.
+	- Improving or extending existing process models using real execution data.
 - When is Conformance Checking particularly useful? #card
-  - When diagnosing inefficiencies or compliance violations.
+	- When diagnosing inefficiencies or compliance violations.
 - Why is Process Mining important for BPM initiatives? #card
-  - It grounds BPM decisions in empirical evidence from actual process execution.
+	- It grounds BPM decisions in empirical evidence from actual process execution.
 - Process Discovery and conformence #card
-  - ![image.png](https://postimg.cc/YhG18cMT)
+	- ![image.png](https://postimg.cc/YhG18cMT)
 - What kind of data do modern information systems record about business processes? #card
-  - Detailed event trails capturing key process execution events.
+	- Detailed event trails capturing key process execution events.
 - Give examples of key process execution events. #card
-  - Case creation and task execution within a case.
+	- Case creation and task execution within a case.
 - What are event logs in process mining? #card
-  - Collections of recorded event data representing process executions.
+	- Collections of recorded event data representing process executions.
 - What is the structure of an event log? #card
-  - A set of traces, where each trace is a sequence of events for a single case.
+	- A set of traces, where each trace is a sequence of events for a single case.
 - What is a trace in process mining? #card
-  - The ordered sequence of events associated with one process instance (case).
+	- The ordered sequence of events associated with one process instance (case).
 - What is automated process discovery? #card
-  - A process mining technique that generates a process model from an event log.
+	- A process mining technique that generates a process model from an event log.
 - What are the inputs and outputs of automated process discovery? #card
-  - Input: event log; Output: a business process model.
+	- Input: event log; Output: a business process model.
 - What does an automatically discovered process model represent? #card
-  - Control-flow relations between tasks observed or implied by the event log.
+	- Control-flow relations between tasks observed or implied by the event log.
 - What is a key quality requirement for discovered process models? #card
-  - They must accurately reflect the behavior recorded in the event log.
+	- They must accurately reflect the behavior recorded in the event log.
 - Which modeling language has traditionally dominated process discovery? #card
-  - Petri nets.
+	- Petri nets.
 - Why have Petri nets been popular in process discovery research? #card
-  - They are expressive and well-suited for formal analysis.
+	- They are expressive and well-suited for formal analysis.
 - What modeling language is increasingly used instead of Petri nets? #card
-  - BPMN (Business Process Model and Notation).
+	- BPMN (Business Process Model and Notation).
 - Why is BPMN considered more suitable for practitioners? #card
-  - It is less technical and more business-oriented than Petri nets.
+	- It is less technical and more business-oriented than Petri nets.
 - What shift does the move toward BPMN indicate? #card
-  - A shift in target audience from data scientists to business analysts and decision managers.
+	- A shift in target audience from data scientists to business analysts and decision managers.
 - Besides Petri nets, what other modeling languages are used in process discovery? #card
-  - Causal nets, state machines, and directed acyclic graphs (DAGs).
+	- Causal nets, state machines, and directed acyclic graphs (DAGs).
 - Why is modeling language choice important in process discovery? #card
-  - It affects usability, interpretability, and adoption by different user groups.
+	- It affects usability, interpretability, and adoption by different user groups.
 - Why is scalability an important issue in modern process mining? #card
-  - Organizations collect very large amounts of event data from many systems.
+	- Organizations collect very large amounts of event data from many systems.
 - Give examples of systems that generate event logs. #card
-  - ERP systems, medical devices (e.g. X-ray machines), and web servers.
+	- ERP systems, medical devices (e.g. X-ray machines), and web servers.
 - What is an event in process mining? #card
-  - A recorded action executed by a user or system component.
+	- A recorded action executed by a user or system component.
 - What is a trace? #card
-  - A time-ordered sequence of events related to a single process execution.
+	- A time-ordered sequence of events related to a single process execution.
 - What is an event log? #card
-  - A collection of all recorded traces of a system.
+	- A collection of all recorded traces of a system.
 - What kinds of insights can process mining extract from event logs? #card
-  - Process models, social networks, compliance information, and performance data (e.g. bottlenecks).
+	- Process models, social networks, compliance information, and performance data (e.g. bottlenecks).
 - What are the two main process mining challenges addressed in this paper? #card
-  - Process discovery and conformance checking.
+	- Process discovery and conformance checking.
 - What assumption is made in process discovery? #card
-  - The internal workings of the system are unknown to the analyst.
+	- The internal workings of the system are unknown to the analyst.
 - What is the goal of process discovery? #card
-  - To learn a process model that reflects what actually happened.
+	- To learn a process model that reflects what actually happened.
 - How does discovered behavior differ from assumed behavior? #card
-  - It is derived from recorded event data, not predefined expectations.
+	- It is derived from recorded event data, not predefined expectations.
 - What is the first main challenge in process discovery? #card
-  - Creating an easy-to-understand process model.
+	- Creating an easy-to-understand process model.
 - What is the second main challenge in process discovery? #card
-  - Ensuring the model has a proper formal interpretation.
+	- Ensuring the model has a proper formal interpretation.
 - What does it mean for a process model to be “sound”? #card
-  - It has well-defined behavior and is free of deadlocks and anomalies.
+	- It has well-defined behavior and is free of deadlocks and anomalies.
 - Why is soundness important in process discovery? #card
-  - Unsound models cannot reliably represent or analyze real processes.
+	- Unsound models cannot reliably represent or analyze real processes.
 - Why do few discovery algorithms solve both understandability and soundness? #card
-  - There is a trade-off between simplicity and formal correctness.
+	- There is a trade-off between simplicity and formal correctness.
 - What is conformance checking? #card
-  - The analysis of differences between a process model and reality.
+	- The analysis of differences between a process model and reality.
 - What is log conformance checking? #card
-  - Comparing a process model with an event log.
+	- Comparing a process model with an event log.
 - What insights does log conformance checking provide? #card
-  - Where and how actual behavior deviates from the model.
+	- Where and how actual behavior deviates from the model.
 - What is model conformance checking? #card
-  - Comparing two process models with each other.
+	- Comparing two process models with each other.
 - When can model conformance checking be applied? #card
-  - Only when a system or reference model is available.
+	- Only when a system or reference model is available.
 - What are typical uses of model conformance checking? #card
-  - Comparing process versions or validating design compliance.
+	- Comparing process versions or validating design compliance.
 - How can conformance checking be used to evaluate discovery algorithms? #card
-  - By measuring similarity between discovered models and known system models. #card
+	- By measuring similarity between discovered models and known system models. #card
 - How are process discovery and conformance checking related? #card
-  - Discovery builds models; conformance checks their correctness against reality.
+	- Discovery builds models; conformance checks their correctness against reality.
 - What does it mean for a company to be “AI-first”? #card
-  - AI is embedded across products, services, processes, and decision-making.
+	- AI is embedded across products, services, processes, and decision-making.
 - How does Google describe an AI-first world? #card
-  - A world where computing is ubiquitous and interactions are natural, intuitive, and intelligent.
+	- A world where computing is ubiquitous and interactions are natural, intuitive, and intelligent.
 - Which industries are pursuing AI-intensive strategies? #card
-  - Financial services, manufacturing, healthcare, and others.
+	- Financial services, manufacturing, healthcare, and others.
 - What is the primary goal of AI-intensive companies? #card
-  - Pervasive intelligence and intuitive technology across operations.
+	- Pervasive intelligence and intuitive technology across operations.
 - How should executives deploy AI to achieve substantial value? #card
-  - Systematically across all key functions and enterprise operations.
+	- Systematically across all key functions and enterprise operations.
 - How does AI support new business process designs? #card
-  - By enabling data-driven decision-making and automation.
+	- By enabling data-driven decision-making and automation.
 - How does AI influence products, services, and business models? #card
-  - It enables entirely new offerings and ways of creating value.
+	- It enables entirely new offerings and ways of creating value.
 - What competitive advantage does aggressive AI adoption provide today? #card
-  - Industry leadership.
+	- Industry leadership.
 - What may AI adoption represent in the future? #card
-  - A basic requirement for survival (“table stakes”).
+	- A basic requirement for survival (“table stakes”).
 - What is the most common current use of AI in companies? #card
-  - Rules-based robotic process automation (RPA).
+	- Rules-based robotic process automation (RPA).
 - What types of processes does traditional RPA automate? #card
-  - Structured, back-office workflows.
+	- Structured, back-office workflows.
 - How are companies enhancing RPA with AI? #card
-  - By combining RPA with machine learning for better decision-making.
+	- By combining RPA with machine learning for better decision-making.
 - What emerging technologies rely heavily on AI? #card
-  - Virtual reality, simulations, digital twins, and metaverses.
+	- Virtual reality, simulations, digital twins, and metaverses.
 - How does the AI era differ from business process reengineering in the 1990s? #card
-  - The focus has shifted from headcount reduction to augmentation.
+	- The focus has shifted from headcount reduction to augmentation.
 - What does augmentation mean in the AI context? #card
-  - Enhancing human capabilities rather than replacing workers.
+	- Enhancing human capabilities rather than replacing workers.
 - How do AI-powered companies approach human labor? #card
-  - By redesigning jobs, reskilling workers, and improving effectiveness.
+	- By redesigning jobs, reskilling workers, and improving effectiveness.
 - What is the strongest link between traditional process improvement and AI? #card
-  - Rules-based robotic process automation (RPA).
+	- Rules-based robotic process automation (RPA).
 - How does Voya integrate AI with process improvement? #card
-  - Through an automation center of excellence using Lean and Six Sigma.
+	- Through an automation center of excellence using Lean and Six Sigma.
 - Which company used AI for major AML and customer service improvements? #card
-  - DBS Bank.
+	- DBS Bank.
 - In which areas did DBS Bank apply AI-driven process improvements? #card
-  - Anti-money laundering and customer centers.
+	- Anti-money laundering and customer centers.
 - What AI-powered technology simplifies process improvement work? #card
-  - Process mining.
+	- Process mining.
 - Why is process mining important in the AI-first era? #card
-  - It reduces manual analysis and accelerates process redesign.
+	- It reduces manual analysis and accelerates process redesign.
 - Why is process mining gaining rapid adoption? #card
-  - It enables data-driven, large-scale process improvement.
+	- It enables data-driven, large-scale process improvement.
 - How does AI-first strategy relate to decision-making? #card
-  - Decisions are increasingly automated, data-driven, and consistent.
+	- Decisions are increasingly automated, data-driven, and consistent.
 - What is the overall message of Davenport & Mittal (2023)? #card
-  - AI should be treated as a core organizational capability, not a side project.
+	- AI should be treated as a core organizational capability, not a side project.
 - What is process mining according to Veit et al. (2017)? #card
-  - A technique to reconstruct, analyze, and improve business processes using event data from transactional IT systems.
+	- A technique to reconstruct, analyze, and improve business processes using event data from transactional IT systems.
 - What is the typical starting point of process mining analysis? #card
-  - Explorative investigation of a process model reconstructed from raw event data.
+	- Explorative investigation of a process model reconstructed from raw event data.
 - What is the goal of manual process discovery? #card
-  - To identify deviations, undesired patterns, and inefficiencies in processes.
+	- To identify deviations, undesired patterns, and inefficiencies in processes.
 - Why is process data often enriched beyond event logs? #card
-  - To enable deeper analysis using additional business attributes (e.g., order value, quantity).
+	- To enable deeper analysis using additional business attributes (e.g., order value, quantity).
 - What advanced analyses become possible with enriched process data? #card
-  - OLAP-style analysis with multiple dimensions and KPIs.
+	- OLAP-style analysis with multiple dimensions and KPIs.
 - What types of improvements are triggered by process mining insights? #card
-  - Reduced throughput time, less manual work, improved quality, and efficiency gains.
+	- Reduced throughput time, less manual work, improved quality, and efficiency gains.
 - What is a key limitation of traditional explorative process mining? #card
-  - It requires manual investigation and prior hypotheses from the user.
+	- It requires manual investigation and prior hypotheses from the user.
 - Who is the “driving force” in traditional process mining? #card
-  - The human analyst.
+	- The human analyst.
 - What problem does the Proactive Insights Engine (PI) address? #card
-  - The need for automated, intelligent process insights without manual exploration.
+	- The need for automated, intelligent process insights without manual exploration.
 - What is the core innovation of the Proactive Insights Engine (PI)? #card
-  - Combining process mining with machine learning to generate automated insights.
+	- Combining process mining with machine learning to generate automated insights.
 - What capabilities does PI provide? #card
-  - Automatic analysis, root-cause detection, and prescriptive recommendations in real time.
+	- Automatic analysis, root-cause detection, and prescriptive recommendations in real time.
 - How does PI change traditional process mining? #card
-  - It shifts from explorative discovery to intelligent, fully automated process analysis.
+	- It shifts from explorative discovery to intelligent, fully automated process analysis.
 - What is PI Conformance? #card
-  - Automated comparison of the actual (“as-is”) process with the documented (“to-be”) process.
+	- Automated comparison of the actual (“as-is”) process with the documented (“to-be”) process.
 - What inputs can PI Conformance use? #card
-  - Imported BPMN models or models created using the built-in process modeler.
+	- Imported BPMN models or models created using the built-in process modeler.
 - What outputs does PI Conformance produce? #card
-  - Ranked process violations, root causes, and recommendations for fixes.
+	- Ranked process violations, root causes, and recommendations for fixes.
 - On what basis are PI recommendations generated? #card
-  - Statistical significance and business relevance indicators.
+	- Statistical significance and business relevance indicators.
 - What is PI Machine Learning? #card
-  - Native integration of machine learning and statistical algorithms into process mining.
+	- Native integration of machine learning and statistical algorithms into process mining.
 - Which language is supported for advanced analytics in PI? #card
-  - R (via RCALL and RAGG).
+	- R (via RCALL and RAGG).
 - What is the difference between RCALL and RAGG? #card
-  - RCALL returns one value per input; RAGG returns aggregated values per group.
+	- RCALL returns one value per input; RAGG returns aggregated values per group.
 - What type of predictions can PI Machine Learning provide? #card
-  - Predictive process monitoring (e.g., forecasting how cases will complete).
+	- Predictive process monitoring (e.g., forecasting how cases will complete).
 - What is PI Social? #card
-  - A component that analyzes the social and organizational aspects of processes.
+	- A component that analyzes the social and organizational aspects of processes.
 - What insights does PI Social uncover? #card
-  - Critical roles, workload imbalances, and inefficient team interactions.
+	- Critical roles, workload imbalances, and inefficient team interactions.
 - How does PI Social visualize process interactions? #card
-  - Through social network maps of people, teams, and organizations.
+	- Through social network maps of people, teams, and organizations.
 - What is PI Companion? #card
-  - A process advisor embedded into operational business systems.
+	- A process advisor embedded into operational business systems.
 - What is the key advantage of PI Companion? #card
-  - It supports decisions during process execution, not only after completion.
+	- It supports decisions during process execution, not only after completion.
 - Which enterprise system does PI Companion commonly integrate with? #card
-  - SAP.
+	- SAP.
 - Give an example of PI Companion decision support. #card
-  - Selecting vendors based on historical delivery performance or customer payment behavior.
+	- Selecting vendors based on historical delivery performance or customer payment behavior.
 - How does PI align with AI-first BPM strategies? #card
-  - By enabling automated, real-time, data-driven process optimization.
+	- By enabling automated, real-time, data-driven process optimization.
 - How does PI extend traditional process mining value? #card
-  - From descriptive and diagnostic analytics to predictive and prescriptive analytics. #card
+	- From descriptive and diagnostic analytics to predictive and prescriptive analytics.
 - What is the overall contribution of Veit et al. (2017)? #card
-  - Demonstrating how AI and ML transform process mining into an intelligent, proactive BPM capability.
+	- Demonstrating how AI and ML transform process mining into an intelligent, proactive BPM capability.

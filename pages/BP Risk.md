@@ -434,3 +434,57 @@ Key Takeaways
   - Because compliance requirements evolve and must be continuously enforced. #card
 - What is the core contribution of Sadiq et al. (2007)? #card
   - Shifting compliance from audit-driven detection to process-integrated prevention.
+- Where do most compliance requirements originate from? #card
+  - Generic compliance documents such as laws, regulations, standards, and contracts.
+- Give examples of legislative and regulatory compliance sources. #card
+  - Sarbanes–Oxley (SOX) and Basel II.
+- Give examples of standards and codes of practice as compliance sources. #card
+  - ISO 9001 and similar industry standards.
+- Why are compliance documents difficult to apply directly to processes? #card
+  - They are often ambiguous and not all parts are relevant to a given business process.
+- Why is an explicit model for compliance requirements necessary? #card
+  - To clearly specify requirements and link them to the business processes they affect.
+- Why must compliance models preserve links to their sources? #card
+  - Because legislation and regulations change over time.
+- What must a compliance model support regarding relevance? #card
+  - It must distinguish which parts of compliance documents apply to which processes.
+- What is a compliance requirement? #card
+  - A constraint or assertion derived from interpreting compliance sources such as laws, standards, or contracts.
+- What happens if compliance requirements are not met? #card
+  - The likelihood of compliance risks materializing increases.
+- What are the possible impacts of compliance risks? #card
+  - Damage to the organization’s business model, reputation, and financial condition.
+- What is a control in compliance management? #card
+  - A restraining or directing influence used to check, verify, or enforce compliance requirements.
+- What is the purpose of defining controls? #card
+  - To mitigate compliance risks and ensure requirements are satisfied.
+- What is a compliance rule? #card
+  - A formal, operative definition of a compliance requirement that describes a control.
+- How do compliance rules relate to controls? #card
+  - Compliance rules formally describe how controls enforce compliance requirements.
+- What is a compliance fragment? #card
+  - A connected process structure used as a reusable building block for compliance.
+- Why are compliance fragments useful? #card
+  - They enable faster and more consistent integration of compliance into processes.
+- How are compliance fragments implemented? #card
+  - Through activities and control-flow structures that realize compliance rules.
+- What is a compliance target? #card
+  - A specification (e.g., a business process or compliance fragment) subject to compliance requirements.
+- Can both processes and fragments be compliance targets? #card
+  - Yes, both can be evaluated for compliance.
+- What is a compliance request? #card
+  - A query issued to check whether compliance targets conform to applicable requirements.
+- Who can issue a compliance request? #card
+  - A compliance expert or business expert.
+- What is the purpose of a compliance request? #card
+  - To determine if and how a process should be changed to become compliant.
+- What does the conceptual compliance model link together? #card
+  - Compliance sources, requirements, risks, controls, rules, fragments, and targets.
+- How does the model support change management? #card
+  - By maintaining traceability from processes back to evolving compliance sources.
+- What type of compliance requirement is illustrated by segregation of duties in loan origination? #card
+  - A process-level control requirement to prevent fraud and conflicts of interest.
+- What is the main contribution of Schumm et al. (2010)? #card
+  - A structured, model-based approach to specifying and integrating compliance into business processes.
+- How does this work complement “compliance by design”? #card
+  - By embedding formal compliance rules and reusable fragments directly into processes.
