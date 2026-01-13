@@ -1,3 +1,4 @@
+## Definitions and Fundamentals
 - What is a business process? #card
 	- A set of logically related tasks performed to achieve a defined business outcome
 - What is a process? #card
@@ -48,6 +49,8 @@
 			- Quality
 			- Customer Satisfaction
 	- Being measurable allows improvement
+
+## Work System Framework
 - Why was the work system framework developed? #card
 	- Help businesses recognize and understand IT-reliant systems, like business processes in organisations
 - What makes the work system framework unique? #card
@@ -73,6 +76,8 @@
 			- And strategies need to be aligned with the organisations strategies
 - Porters value chain model #card
 	- ![Porter's Value Chain Framework Summary and Forum - 12manage](https://th.bing.com/th/id/R.de77695282e1473f177d15c3dbf2445e?rik=BHt7IT2lHRE9jA&riu=http%3a%2f%2fwww.12manage.com%2fimages%2fpicture_porter_value_chain.gif&ehk=GCBeAmw9V4nYx3XAo6MViv8KAOzG%2fHQgolt2WIv%2bN%2fk%3d&risl=&pid=ImgRaw&r=0)
+
+## BPM Evolution (Waves)
 - How does Dumas (Wave 3) define a business process? #card
 	- A collection of inter-related events, activities, and decision points which involve a number of actors and objects and collectively lead to an outcome that is of value to at least one customer
 - How does Wave 3 define business process management? #card
@@ -159,6 +164,8 @@
 	- Define managerial performance issues
 	- Define problems with IT support
 	- Generate Software requirements
+
+## BPM Methodology and Scoping
 - BP Trends Methodology #card
 	- ![Copies-R-Us: A Case Study (Part 1) | BPTrends](https://bptrends.info/wp-content/uploads/Copies-R-Us_fig4.jpg)
 - What are the assumptions of a process redesign methodology? #card
@@ -245,6 +252,8 @@
 	- ![Week 7: Business Process Analysis - ppt download](https://tse4.mm.bing.net/th/id/OIP.2314ugyF2fx3xZyCi_14NAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3)
 -
 	- A strong focus on business processes is widely accepted in industry.
+
+## Process Redesign
 - Despite its acceptance, how is Business Process Redesign (BPR) typically characterized in practice? #card
 	- More art than science.
 - Who primarily develops BPR design methodologies? #card
@@ -381,10 +390,14 @@
 	- Outsourcing executes tasks at runtime; trusted parties reuse past results
 - What is Interfacing? #card
 	- Using standardized interfaces with customers and partners to reduce errors.
+
+## BPM Systems and Architecture
 - The emergence of BPMS Systems #card
 	- ![Screenshot-11-1-2026-192752-www-studocu-com.jpg](https://postimg.cc/XX57hMgh)
 - BPMN reference architecture #card
 	- [![image.png](https://i.postimg.cc/wMh8CDrc/image.png)](https://postimg.cc/y3Yb93sk)
+
+## Sociotechnical Perspective
 - What is the sociotechnical perspective in IS? #card
 	- A view that considers both technical artifacts and social actors, emphasizing outcomes emerging from their interaction.
 - What does the sociotechnical perspective not privilege? #card
@@ -449,6 +462,8 @@
 	- Increased learning improves perceived ease of use; restricted access increases perceived inefficiency.
 - What should organizations do with emotional responses? #card
 	- Address them openly by creating trustful spaces over time.
+
+## Job Design
 - What does traditional job design focus on? #card
 	- The relationship between the job and the individual performer.
 - Why is job design considered nested? #card
